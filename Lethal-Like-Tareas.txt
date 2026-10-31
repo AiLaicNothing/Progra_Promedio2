@@ -1,0 +1,39 @@
+lETHAL COMPANY LIKE
+
+-Escoges planeta
+-Llegas planeta
+
+Mecánica Principal
+-Meta de cuotas
+-Inventario de 4 objetos
+-Vender objetos incrementan dinero
+-Comprar objetos
+-Monstruos 
+
+-Sistema de economía
+-Sistema de cuotas
+-Sistema de pickup/UI
+-Objetos/valores
+-Jugador/Movimiento/Inventario
+-Monstruos
+-Tienda/UI
+-3 Niveles
+-Lobby con selector de niveles
+-Duración de día
+
+Roseling
+-Economy_Manager
+-Quote_Manager
+-Menu principal
+-Interface Pickable
+-UI de pick up
+-2Niveles
+
+Martin:
+-Player
+-Objetos
+-Monstruos
+-Tienda
+-1Nivel
+-Lobby
+-Duración
