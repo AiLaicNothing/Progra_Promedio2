@@ -61,6 +61,9 @@ public class Game_Manager : MonoBehaviour
     {
         if (gameFinished) return;
 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         gameFinished = true;
 
         Debug.Log("Victory!");

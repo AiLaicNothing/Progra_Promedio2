@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3f63935e414c74887e1475075e5fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_Statue
-  moveSpeed: 4
+  moveSpeed: 12
   stopDistance: 1.2
   pathUpdateInterval: 0.2
   attackRange: 1.7
