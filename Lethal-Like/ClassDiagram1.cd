@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SceneController">
+    <Position X="14.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\SceneController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LocalizeString">
+    <Position X="10.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAIAAIAAAAAAAAAAAAAAAAAAAAAAAAAEEA=</HashCode>
+      <FileName>Assets\Scripts\Traductor\LocalizeString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LocaleSelector">
+    <Position X="12.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEAAAAAAAAAAACAAAACAEAAAACAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Traductor\LocaleSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pickup_UI">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAABAACAAAAAAAAQBIAACAAAAAAABAAAIACEAAEA=</HashCode>
+      <FileName>Assets\Scripts\PickUp\Pickup_UI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Economy_Manager">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIgACAAAAAACAIAAAAAAIBAAAAAAAAAAAAAEEA=</HashCode>
+      <FileName>Assets\Scripts\Economy\Economy_Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quota_Manager">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAgKQAACBAIAAAAAAAAABAAAAAAAQAAAAAJEA=</HashCode>
+      <FileName>Assets\Scripts\Economy\Quota_Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player_Controller">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAACgAEmAYAAAEBAQAAAABAAQAAFAAAIAACAAAAEA=</HashCode>
+      <FileName>Assets\Martin\Script\Player_Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player_Health">
+    <Position X="2.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAIAAAAAAAAAAAAgAAAABAEAAAAAAAAgAAAAEA=</HashCode>
+      <FileName>Assets\Martin\Script\Player_Health.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Player_InputRecive">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAgAEAAAEAAAAAAAAAIAAAAAAACABAAAAQAIAAACA=</HashCode>
+      <FileName>Assets\Martin\Script\Player_InputRecive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player_Interaction">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAUAAAAYBAAAAYAAAAAAAAAYEBMAAAAAQgQAAEA=</HashCode>
+      <FileName>Assets\Martin\Script\Player_Interaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sell_Button">
+    <Position X="11" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Martin\Script\Structure\Sell_Button.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Seller">
+    <Position X="12.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\Martin\Script\Structure\Seller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game_Manager">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAAEAACAAAAABAAAAAAAAgAAESAAAQAAEAACAAEA=</HashCode>
+      <FileName>Assets\Martin\Script\Manager\Game_Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item_Spawner">
+    <Position X="16.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAAAAAAAAAAAAAAAACAAAAAAAgAAAAQAA=</HashCode>
+      <FileName>Assets\Martin\Script\Item\Item_Spawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item">
+    <Position X="18.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgAAAAAAAAAAAAAAAIAAAAEACAAAAAgAAAAAAQ=</HashCode>
+      <FileName>Assets\Martin\Script\Item\Item.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Box">
+    <Position X="16" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Martin\Script\Item\Box.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy_Chaser">
+    <Position X="12.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAESAEgQQABAAABCAEAIAAgEABAAAAAACAAEA=</HashCode>
+      <FileName>Assets\Martin\Script\Enemy\Enemy_Chaser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy_Spawner">
+    <Position X="10.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAABAAAACAEAAAACAAACAAAAAJAQAAA=</HashCode>
+      <FileName>Assets\Martin\Script\Enemy\Enemy_Spawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy_Statue">
+    <Position X="14.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\Martin\Script\Enemy\Enemy_Statue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IPickable">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\Scripts\PickUp\IPickable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IDamageable">
+    <Position X="18.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Martin\Script\Interface\IDamageable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
