@@ -1,9 +1,14 @@
+using System;
 using UnityEngine;
 
 public class Player_Health : MonoBehaviour, IDamageable
 {
-    [SerializeField] private float maxHealth;
+    [SerializeField] private float maxHealth = 100f;
+
     private float currentHealth;
+    private bool isDead;
+
+    public event Action OnDied;
 
     private void Awake()
     {
@@ -12,6 +17,8 @@ public class Player_Health : MonoBehaviour, IDamageable
 
     public void TakeDamage(float amount)
     {
+        if (isDead || amount <= 0) return;
+
         currentHealth -= amount;
 
         if (currentHealth <= 0) OnDead();
@@ -19,7 +26,12 @@ public class Player_Health : MonoBehaviour, IDamageable
 
     private void OnDead()
     {
-        Debug.Log("Dead");
-    }
+        if (isDead) return;
 
+        isDead = true;
+
+        Debug.Log("Player died");
+
+        OnDied?.Invoke();
+    }
 }

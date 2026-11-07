@@ -1,9 +1,21 @@
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Item : MonoBehaviour, IPickable
 {
     [SerializeField] private string _name;
     [SerializeField] private float value;
+
+    public int Value => Mathf.RoundToInt(value);
+
+    public string GetItemName()
+    {
+        return _name;
+    }
+
+    public int GetItemValue()
+    {
+        return Value;
+    }
 
     public void Use()
     {
@@ -12,6 +24,6 @@ public class Item : MonoBehaviour
 
     protected virtual void Function()
     {
-        Debug.Log("Doesnt do anything");
+        Debug.Log("Doesn't do anything");
     }
 }

@@ -14,6 +14,9 @@ public class Player_Interaction : MonoBehaviour
     [SerializeField] private float interactionWidth = 1f;
     [SerializeField] private float interactionHeight = 1f;
 
+    [Header("Buttons")]
+    [SerializeField] private LayerMask buttonLayer;
+
     [Header("Drop")]
     [SerializeField] private float dropForce = 4f;
 
@@ -36,16 +39,20 @@ public class Player_Interaction : MonoBehaviour
 
     private void HandleInteraction()
     {
-        if (inputs.hasDroped && heldItem != null)
         {
-            DropObject();
-            return;
-        }
+            if (inputs.hasDroped && heldItem != null)
+            {
+                DropObject();
+                return;
+            }
 
-        if (inputs.hasInteracted)
-        {
-            if (heldItem == null) PickUpObject();
-            else UseItem();
+            if (inputs.hasInteracted)
+            {
+                if (TryPressButton()) return;
+
+                if (heldItem == null) PickUpObject();
+                else UseItem();
+            }
         }
     }
 
@@ -72,7 +79,6 @@ public class Player_Interaction : MonoBehaviour
 
             Vector3 closestPoint = hit.ClosestPoint(cameraTransform.position);
 
-            // Check for walls or other obstacles.
             if (Physics.Linecast(cameraTransform.position, closestPoint, obstructionLayer, QueryTriggerInteraction.Ignore))
             {
                 continue;
@@ -126,5 +132,23 @@ public class Player_Interaction : MonoBehaviour
         if (heldItem == null) return;
 
         heldItem.Use();
+    }
+
+    private bool TryPressButton()
+    {
+        int mask = buttonLayer.value | obstructionLayer.value;
+
+        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out RaycastHit hit, interactionDistance, mask, QueryTriggerInteraction.Ignore))
+        {
+            Sell_Button button = hit.collider.GetComponentInParent<Sell_Button>();
+
+            if (button != null)
+            {
+                button.Interact();
+                return true;
+            }
+        }
+
+        return false;
     }
 }
