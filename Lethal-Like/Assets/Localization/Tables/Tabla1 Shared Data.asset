@@ -39,6 +39,14 @@ MonoBehaviour:
     m_Key: U_MONEY
     m_Metadata:
       m_Items: []
+  - m_Id: 9821503320064
+    m_Key: U_QUOTA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11174111834112
+    m_Key: U_PROGRESS
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
