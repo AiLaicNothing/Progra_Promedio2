@@ -52,4 +52,14 @@ public class Economy_Manager : MonoBehaviour
             moneyText.text = "$" + money.ToString();
         }
     }
+
+    public void SellItem(int amount)
+    {
+        AddMoney(amount);
+
+        if (Quota_Manager.instance != null)
+        {
+            Quota_Manager.instance.RegisterSale(amount);
+        }
+    }
 }
