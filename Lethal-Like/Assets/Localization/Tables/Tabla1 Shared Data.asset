@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Key: U_PROGRESS
     m_Metadata:
       m_Items: []
+  - m_Id: 65981890387968
+    m_Key: U_TEXT
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

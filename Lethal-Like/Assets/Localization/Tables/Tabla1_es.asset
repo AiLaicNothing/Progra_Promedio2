@@ -50,6 +50,10 @@ MonoBehaviour:
     m_Localized: PROGRESO
     m_Metadata:
       m_Items: []
+  - m_Id: 65981890387968
+    m_Localized: "\uC784\uBB34 \uC644\uB8CC\r\n\uC798\uD588\uC5B4!!!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

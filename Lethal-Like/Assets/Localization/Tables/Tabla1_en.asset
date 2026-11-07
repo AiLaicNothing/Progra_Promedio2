@@ -50,6 +50,12 @@ MonoBehaviour:
     m_Localized: PROGRESS
     m_Metadata:
       m_Items: []
+  - m_Id: 65981890387968
+    m_Localized: 'Mission completed
+
+      Good job!!!'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
