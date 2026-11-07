@@ -552,7 +552,7 @@ MonoBehaviour:
     m_ActionName: 'Action/Look[/Mouse/delta]'
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 57f9cde8-6cfd-4bff-9d87-c9b759984d3d
+  m_DefaultActionMap: Action
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &6278876847146516830
@@ -625,4 +625,7 @@ MonoBehaviour:
   interactionDistance: 2
   interactionWidth: 1
   interactionHeight: 1
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 8192
   dropForce: 2

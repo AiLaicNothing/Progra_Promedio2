@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -5,25 +6,26 @@ public class Quota_Manager : MonoBehaviour
 {
     public static Quota_Manager instance;
 
+    [Header("Quota")]
     public int quota = 500;
     public int collectedMoney = 0;
+    public bool quotaCompleted = false;
 
+    [Header("UI")]
     public TextMeshProUGUI quotaText;
     public TextMeshProUGUI progressText;
 
-    public bool quotaCompleted = false;
+    public event Action OnQuotaCompleted;
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
+        if (instance != null && instance != this)
         {
             Destroy(gameObject);
+            return;
         }
+
+        instance = this;
     }
 
     private void Start()
@@ -33,11 +35,18 @@ public class Quota_Manager : MonoBehaviour
 
     public void RegisterSale(int amount)
     {
+        if (quotaCompleted || amount <= 0) return;
+
         collectedMoney += amount;
 
         if (collectedMoney >= quota)
         {
             quotaCompleted = true;
+
+            UpdateQuotaUI();
+
+            OnQuotaCompleted?.Invoke();
+            return;
         }
 
         UpdateQuotaUI();
@@ -54,27 +63,24 @@ public class Quota_Manager : MonoBehaviour
 
     public int GetRemainingQuota()
     {
-        int remaining = quota - collectedMoney;
-
-        if (remaining < 0)
-        {
-            remaining = 0;
-        }
-
-        return remaining;
+        return Mathf.Max(0, quota - collectedMoney);
     }
 
     public void UpdateQuotaUI()
     {
         if (quotaText != null)
         {
-            quotaText.text = "  $" + quota.ToString();
+            quotaText.text = "$" + quota;
         }
 
         if (progressText != null)
         {
-            progressText.text = "$" + collectedMoney.ToString()
-                + " / $" + quota.ToString();
+            progressText.text = "$" + collectedMoney + " / $" + quota;
         }
+    }
+
+    private void OnDestroy()
+    {
+        if (instance == this) instance = null;
     }
 }
