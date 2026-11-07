@@ -28,6 +28,7 @@ Roseling
 -Interface Pickable
 -UI de pick up
 -2Niveles
+-Traducción
 
 Martin:
 -Player
